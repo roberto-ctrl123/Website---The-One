@@ -285,8 +285,12 @@
     }
     .gallery-img:nth-child(2) { margin-top: 2rem; }
     .gallery-img:nth-child(4) { margin-top: -2rem; }
-    .gallery-img:nth-child(5) { grid-column: 1 / -1; aspect-ratio: unset; }
-    .gallery-img:nth-child(5) img { height: auto; object-fit: contain; }
+    .gallery-img:nth-child(5) {
+      grid-column: 1 / -1;
+      width: 50%; margin: 0 auto;
+      aspect-ratio: 4/5;
+    }
+    .gallery-img:nth-child(5) img { object-fit: cover; }
 
     /* ─── REVIEWS ─── */
     #recenzii { background: var(--off-black); padding: 7rem 3rem; }
