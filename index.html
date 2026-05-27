@@ -287,7 +287,12 @@
     }
     .gallery-img:nth-child(5) {
       grid-column: 1 / -1;
-      aspect-ratio: 3 / 2;
+      aspect-ratio: unset;
+    }
+    .gallery-img:nth-child(5) img {
+      height: auto;
+      object-fit: unset;
+      object-position: unset;
     }
 
     /* ─── REVIEWS ─── */
