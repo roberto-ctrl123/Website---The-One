@@ -268,7 +268,7 @@
     .despre-gallery {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0;
+      gap: 4px;
       align-items: start;
     }
     .gallery-img {
@@ -286,7 +286,7 @@
     }
     .gallery-img:nth-child(5) {
       grid-column: 1 / -1;
-      max-width: 50%;
+      max-width: calc(50% - 2px);
       margin: 0 auto;
     }
 
